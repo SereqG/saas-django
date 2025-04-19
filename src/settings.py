@@ -52,12 +52,14 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "saas.urls"
+ROOT_URLCONF = "urls"
+
+print(f"BASE_DIR: {BASE_DIR}")
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "templates"],
+        "DIRS": [BASE_DIR / "src/templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -69,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "saas.wsgi.application"
+WSGI_APPLICATION = "wsgi.application"
 
 
 # Database

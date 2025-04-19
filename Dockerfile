@@ -48,8 +48,6 @@ RUN pip install -r /tmp/requirements.txt
 # such as:
 # RUN python manage.py collectstatic --noinput
 
-# set the Django default project name
-ARG PROJ_NAME="saas"
 
 # create a bash script to run the Django project
 # this script will execute at runtime when
